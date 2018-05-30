@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/haha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="1dp"
+
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <GridView
+
+                android:id="@+id/banco"
+                android:layout_width="452dp"
+                android:layout_height="271dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:layout_marginEnd="70dp"
+                android:layout_marginRight="70dp"
+                android:addStatesFromChildren="true"
+                android:horizontalSpacing="0dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></GridView>
+
+            <ImageView
+                android:id="@+id/nhanvat"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/bay" />
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/nuttren"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:src="@drawable/tron"
+        app:layout_constraintBottom_toBottomOf="@+id/nutduoi"
+        android:layout_marginBottom="96dp"
+        android:layout_marginLeft="45dp"
+        app:layout_constraintLeft_toLeftOf="@+id/nuttrai" />
+    <ImageButton
+        android:id="@+id/nuttrai"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/haha"
+        android:layout_marginLeft="11dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/tron"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/nutphai"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/nutduoi"
+        android:layout_marginLeft="93dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_toEndOf="@+id/nutduoi"
+        android:layout_toRightOf="@+id/nutduoi"
+        android:src="@drawable/tron"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/nutduoi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="250dp"
+        android:layout_toEndOf="@+id/nuttrai"
+        android:layout_toRightOf="@+id/nuttrai"
+        android:src="@drawable/tron"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/nutbom"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/nutphai"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="184dp"
+        android:src="@drawable/bom"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/quai"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="426dp"
+
+        android:layout_marginStart="426dp"
+        android:layout_marginTop="117dp"
+        android:src="@drawable/bo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/thoigian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="16dp"
+        android:focusableInTouchMode="true"
+        android:textColor="@android:color/white"
+        android:text="00"
+        android:textSize="25sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="bom"
+        android:textSize="14sp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/haha"
+        app:layout_constraintLeft_toRightOf="@+id/imageView4"
+        android:layout_marginLeft="9dp" />
+
+    <TextView
+        android:id="@+id/mang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="mang"
+        android:textSize="14sp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/haha"
+        app:layout_constraintLeft_toRightOf="@+id/imageView3"
+        android:layout_marginLeft="3dp" />
+
+    <TextView
+        android:id="@+id/tocdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="tdo"
+        android:textSize="14sp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/haha"
+        app:layout_constraintLeft_toRightOf="@+id/imageView2"
+        android:layout_marginLeft="14dp" />
+
+    <TextView
+        android:id="@+id/domanh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="dmanh"
+        android:textSize="14sp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/haha"
+        app:layout_constraintLeft_toRightOf="@+id/imageView"
+        android:layout_marginLeft="7dp" />
+
+    <TextView
+        android:id="@+id/gameover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginRight="182dp"
+        android:layout_marginTop="110dp"
+
+        android:text=""
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="@+id/haha"
+        app:layout_constraintTop_toTopOf="@+id/haha" />
+
+
+
+
+    <ImageView
+
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/tangdomanh"
+        android:layout_marginRight="166dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/haha"
+        app:layout_constraintRight_toRightOf="@+id/haha"
+        android:id="@+id/imageView" />
+    <ImageView
+
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/bomnho"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/haha"
+        app:layout_constraintRight_toLeftOf="@+id/imageView3"
+        android:layout_marginRight="66dp"
+        android:id="@+id/imageView4" />
+    <ImageView
+
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/themmang"
+        app:layout_constraintRight_toLeftOf="@+id/imageView"
+        android:layout_marginRight="130dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/haha"
+        android:id="@+id/imageView3" />
+    <ImageView
+
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/tangtocdo"
+        app:layout_constraintRight_toLeftOf="@+id/imageView"
+        android:layout_marginRight="58dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/haha"
+        android:id="@+id/imageView2" />
+
+</android.support.constraint.ConstraintLayout>
